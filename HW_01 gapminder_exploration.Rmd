@@ -1,0 +1,41 @@
+---
+title: "Gapminder exploration"
+output:
+   html_document:
+      self_contained: false
+      keep_md: true
+---
+
+Loading libraries for exploration
+
+```{r}
+library(gapminder)
+library(tibble)
+library(DT)
+```
+load gapminder into tibble and data table
+```{r}
+datatable(as_tibble(gapminder))
+```
+
+Summary of gapfinder table
+```{r}
+summary(gapminder)
+```
+Names within gapminder file 
+```{r}
+names(gapminder)
+```
+Find the mean year within gapminder
+```{r}
+mean(gapminder$year)
+```
+find max and min in gapminder years
+```{r}
+max(gapminder$year)
+```
+```{r}
+min(gapminder$year)
+```
+
+
