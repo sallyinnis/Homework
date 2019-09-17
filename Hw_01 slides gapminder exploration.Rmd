@@ -1,0 +1,49 @@
+---
+title: "Exploration of Gapminder"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r}
+library(gapminder)
+library(tibble)
+library(DT)
+```
+
+---
+### Gapminder as tibble
+```{r}
+datatable(as_tibble(gapminder))
+```
+
+
+## Summary of gapfinder table
+```{r}
+summary(gapminder)
+```
+
+## Names within gapminder file 
+```{r}
+names(gapminder)
+```
+## Find the mean year within gapminder
+```{r}
+mean(gapminder$year)
+```
+
+## Find max and min in gapminder years
+- max
+```{r}
+max(gapminder$year)
+```
+- min
+```{r}
+min(gapminder$year)
+```
+
+# Thank you for your patience
