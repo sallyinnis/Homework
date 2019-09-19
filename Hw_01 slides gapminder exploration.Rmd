@@ -1,9 +1,9 @@
 ---
 title: "Exploration of Gapminder"
 output:
-  beamer_presentation: default
   ioslides_presentation: default
-widescreen: yes
+  beamer_presentation: default
+  widescreen: yes
 ---
 
 ```{r setup, include=FALSE}
