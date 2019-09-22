@@ -43,4 +43,25 @@ gapminder %>%
   filter(year!=1952)
 ```
 
+Exercise 1.4 
+
+```{r}
+gapminder %>% 
+  group_by(country) %>% 
+  summarize(maxgdp = max(gdpPercap))
+```
+
+Exercise 1.5
+
+```{r, fig.width = 5, fig.height = 2}
+gapminder %>% 
+  filter(country == 'Canada') %>% 
+  arrange(year,lifeExp) %>%
+  ggplot(aes(lifeExp,gdpPercap)) +
+  geom_line() +
+  scale_y_continuous(name = "GDP of Canada",limits = c(10000,40000)) +
+  scale_x_continuous(name = 'Life Expectancy', limits = c(68,81))
+  
+  
+```
 
